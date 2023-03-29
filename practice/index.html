@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        h1 {
+            text-align: center;
+            border: 2px solid white;
+            background-color: green;
+            margin: 5px 200px 0 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+        }
+
+        #box {
+            text-align: center;
+            border: 2px solid white;
+            background-color: blue;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+        }
+
+        #box1 {
+            text-align: center;
+            border: 2px solid white;
+            background-color: blue;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+        }
+
+        #box2 {
+            text-align: center;
+            border: 2px solid white;
+            background-color: blue;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+        }
+
+        #box3 {
+            text-align: center;
+            border: 2px solid white;
+            background-color: blue;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+        }
+
+        #box4 {
+            text-align: center;
+            border: 2px solid white;
+            background-color: blue;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+        }
+
+        #fname {
+            text-align: center;
+            border: 2px solid white;
+            background-color: pink;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+            width: 70%;
+        }
+
+        #dsg {
+            text-align: center;
+            border: 2px solid white;
+            background-color:pink;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+            width: 70%;
+        }
+
+        #salary {
+            text-align: center;
+            border: 2px solid white;
+            background-color: pink;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+            width: 70%;
+        }
+
+        #city {
+            text-align: center;
+            border: 2px solid white;
+            background-color: pink;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+            width: 70%;
+        }
+
+        #state {
+            text-align: center;
+            border: 2px solid white;
+            background-color: pink;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+            width: 70%;
+        }
+
+        #box10 {
+            text-align: center;
+            border: 2px solid white;
+            background-color: green;
+            margin: 5px 200px 5px 200px;
+            font-size: 25px;
+            padding: 5px 0 5px 0;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Keyboard Event</h1>
+    <h1 id="box">Name : Nadeem Saddieq</h1>
+    <h1 id="box1">Dsg : Student</h1>
+    <h1 id="box2">Salary : 670000</h1>
+    <h1 id="box3">City : Saharanpur</h1>
+    <h1 id="box4">State : Uttar Predesh</h1>
+    <input type="text" id="fname" placeholder="enter your name" onkeydown="fun1('fname')" onkeypress="fun1('fname')"
+        onkeyup="fun1('fname')">
+    <input type="text" id="dsg" placeholder="enter desgination" onkeydown="fun1('dsg')" onkeypress="fun1('dsg')"
+        onkeyup="fun1('dsg')">
+    <input type="text" id="salary" placeholder="enter your salary" onkeydown="fun1('salary')"
+        onkeypress="fun1('salary')" onkeyup="fun1('salary')">
+    <input type="text" id="city" placeholder="enter your city" onkeydown="fun1('city')" onkeypress="fun1('city')"
+        onkeyup="fun1('city')">
+    <input type="text" id="state" placeholder="enter your state" onkeydown="fun1('state')" onkeypress="fun1('state')"
+        onkeyup="fun1('state')">
+    <button onclick="postData()" id="box10">Submit</button>
+    <script>
+        function postData() {
+            alert(`
+            name          : ${document.getElementById("fname").value}
+            destination   : ${document.getElementById("dsg").value}
+            salary        : ${document.getElementById("salary").value}
+            city          : ${document.getElementById("city").value}
+            state         : ${document.getElementById("state").value}
+
+            `
+            )
+        }
+    </script>
+</body>
+
+</html>
